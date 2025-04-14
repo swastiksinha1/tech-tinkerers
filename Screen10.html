@@ -1,0 +1,129 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   AnyChat
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Inter', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <div class="flex h-screen">
+   <!-- Sidebar -->
+   <div class="w-1/5 bg-white border-r border-gray-200 p-4">
+    <div class="flex items-center mb-6">
+     <div class="w-8 h-8 bg-blue-500 rounded-full mr-2">
+     </div>
+     <span class="text-xl font-semibold">
+      AnyChat
+     </span>
+    </div>
+    <nav>
+     <ul>
+      <li class="mb-4">
+       <a class="flex items-center text-blue-500" href="#">
+        <i class="fas fa-comments mr-2">
+        </i>
+        <span>
+         Show chat
+        </span>
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-600" href="#">
+        <i class="fas fa-user-friends mr-2">
+        </i>
+        <span>
+         Online Users
+        </span>
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-600" href="#">
+        <i class="fas fa-bell mr-2">
+        </i>
+        <span>
+         Notifications
+        </span>
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-600" href="#">
+        <i class="fas fa-cog mr-2">
+        </i>
+        <span>
+         Settings
+        </span>
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-600" href="#">
+        <i class="fas fa-sign-out-alt mr-2">
+        </i>
+        <span>
+         Logout
+        </span>
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 flex flex-col">
+    <!-- Header -->
+    <div class="flex items-center justify-between bg-white p-4 border-b border-gray-200">
+     <h1 class="text-xl font-semibold">
+      Photo Generation
+     </h1>
+     <div class="flex items-center">
+      <input class="border border-gray-300 rounded-full px-4 py-2 text-sm w-64" placeholder="Search for a conversation" type="text"/>
+     </div>
+    </div>
+    <!-- Chat Area -->
+    <div class="flex-1 p-4 overflow-y-auto">
+     <div class="flex items-start mb-4">
+      <div class="w-10 h-10 bg-blue-500 rounded-full mr-4">
+      </div>
+      <div>
+       <div class="bg-white p-4 rounded-lg shadow">
+        <p class="text-gray-700">
+         I have created an image. Look for an image that will replace your screen here. Make sure it is high-quality and has a resolution suitable for wallpaper purposes.
+        </p>
+        <img alt="A motivational wallpaper with the text 'Step away from the screen.'" class="mt-4" src="Botimg.png"/>
+       </div>
+       <div class="flex items-center mt-2 text-gray-500 text-sm">
+        <span>
+         Barley
+        </span>
+        <span class="mx-2">
+         •
+        </span>
+        <span>
+         Tech Talkers
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- Message Input -->
+    <div class="bg-white p-4 border-t border-gray-200">
+     <div class="flex items-center">
+      <input class="flex-1 border border-gray-300 rounded-full px-4 py-2 text-sm" placeholder="Type your message" type="text"/>
+      <button class="ml-4 text-blue-500">
+       <i class="fas fa-paper-plane">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

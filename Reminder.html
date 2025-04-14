@@ -1,0 +1,138 @@
+<html>
+ <head>
+  <title>
+   Notification Settings
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100 font-roboto">
+  <div class="min-h-screen flex flex-col">
+   <!-- Header -->
+   <header class="bg-white shadow-sm">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+     <div class="flex items-center">
+      <img alt="Logo" class="h-10 w-10" src="https://placehold.co/40x40"/>
+      <span class="ml-2 text-xl font-bold">
+       Re:Connect
+      </span>
+     </div>
+     <nav class="flex items-center space-x-6">
+      <a class="text-gray-600 hover:text-black" href="#">
+       Home
+      </a>
+      <a class="text-gray-600 hover:text-black" href="#">
+       Community
+      </a>
+      <a class="text-black font-bold border-b-2 border-black" href="#">
+       Reminders
+      </a>
+      <div class="flex items-center space-x-4">
+       <i class="fas fa-bell text-gray-600 hover:text-black">
+       </i>
+       <i class="fas fa-cog text-gray-600 hover:text-black">
+       </i>
+       <img alt="User Avatar" class="h-10 w-10 rounded-full" src="https://placehold.co/40x40"/>
+      </div>
+     </nav>
+    </div>
+   </header>
+   <!-- Main Content -->
+   <main class="flex-grow container mx-auto px-4 py-8">
+    <h1 class="text-2xl font-bold mb-6">
+     Notification settings
+    </h1>
+    <div class="bg-white p-6 rounded-lg shadow-md">
+     <h2 class="text-xl font-semibold mb-4">
+      General notifications
+     </h2>
+     <div class="flex items-center mb-4">
+      <span class="mr-2">
+       Turn on general notifications
+      </span>
+      <input class="toggle-checkbox" type="checkbox"/>
+     </div>
+     <div class="flex items-center mb-6">
+      <span class="mr-2">
+       Receive email notifications
+      </span>
+      <input checked="" class="toggle-checkbox" type="checkbox"/>
+     </div>
+     <h2 class="text-xl font-semibold mb-4">
+      Mindfulness practice notifications
+     </h2>
+     <div class="flex items-center mb-4">
+      <input class="mr-2" type="checkbox"/>
+      <span>
+       Mindfulness reminders
+      </span>
+     </div>
+     <div class="flex items-center mb-6">
+      <input class="mr-2" type="checkbox"/>
+      <span>
+       Receive notifications for new mindfulness practices
+      </span>
+     </div>
+     <h2 class="text-xl font-semibold mb-4">
+      Break reminder settings
+     </h2>
+     <div class="flex items-center mb-4">
+      <input class="mr-2" type="checkbox"/>
+      <span>
+       Enable break reminders
+      </span>
+     </div>
+     <div class="mb-4">
+      <label class="block mb-2" for="break-frequency">
+       Set break reminder frequency
+      </label>
+      <input class="w-full" id="break-frequency" type="range"/>
+     </div>
+     <div class="mb-6">
+      <label class="block mb-2" for="break-duration">
+       Set break duration
+      </label>
+      <input class="w-full" id="break-duration" type="range"/>
+     </div>
+     <h2 class="text-xl font-semibold mb-4">
+      Mindfulness session reminder settings
+     </h2>
+     <div class="flex items-center mb-4">
+      <input class="mr-2" type="checkbox"/>
+      <span>
+       Enable session reminders
+      </span>
+     </div>
+     <div class="mb-4">
+      <label class="block mb-2" for="session-frequency">
+       Set session reminder frequency
+      </label>
+      <input class="w-full" id="session-frequency" type="range"/>
+     </div>
+     <div class="mb-6">
+      <label class="block mb-2" for="session-duration">
+       Set session duration
+      </label>
+      <input class="w-full" id="session-duration" type="range"/>
+     </div>
+     <button class="bg-blue-600 text-white px-4 py-2 rounded">
+      Save settings
+     </button>
+    </div>
+   </main>
+   <!-- Footer -->
+   <footer class="bg-white shadow-sm">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+     <span>
+      Re:Connect © 2023
+     </span>
+     <a class="text-blue-600" href="#">
+      Privacy Policy
+     </a>
+    </div>
+   </footer>
+  </div>
+ </body>
+</html>

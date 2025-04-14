@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReConnect | Digital Wellness Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: url('https://images.unsplash.com/photo-1496307653780-42ee777d4833?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.7);
+      z-index: 0;
+    }
+
+    header, section {
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      background-color: #ffffffcc;
+      padding: 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: fadeInDown 1s ease;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      color: #0077b6;
+      animation: bounceIn 1s ease;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .animated-character {
+      position: fixed;
+      bottom: 10px;
+      left: 20px;
+      width: 140px;
+      z-index: 2;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 950px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #023e8a;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #0077b6;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .page-analysis {
+      background: #f0f8ff;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      position: relative;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .page-analysis:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .page-analysis h3 {
+      margin-top: 0;
+      color: #0077b6;
+    }
+
+    .pitch {
+      background: #e0f7fa;
+      border-left: 6px solid #00b4d8;
+      padding: 1.5rem;
+      margin-top: 2.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeInUp 1.2s ease;
+      transition: all 0.3s ease;
+    }
+
+    .pitch:hover {
+      background: #d0f0f5;
+      transform: translateY(-3px);
+    }
+
+    .pitch h2 {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.9); opacity: 0; }
+      60% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <img class="animated-character" src="https://cdn.pixabay.com/photo/2021/09/01/12/17/ai-6590484_1280.png" alt="Floating Virtual Assistant" onerror="this.style.display='none'" />
+
+  <header>
+    <h1><a href="temp.html" style="text-decoration: none; color: #0077b6;">ReConnect Platform</a></h1>
+    <p>Enhancing Mental Wellness Through Digital Balance</p>
+  </header>
+
+  <section>
+    <h2>Platform Introduction</h2>
+    <p><strong>ReConnect</strong> is a holistic digital wellness solution designed to help individuals foster healthier digital habits. Utilizing evidence-based methodologies, AI-driven insights, and a supportive community, it supports users in achieving mental clarity and life balance.</p>
+
+    <h2>Feature Highlights</h2>
+
+    <div class="page-analysis">
+      <h3>Landing Interface</h3>
+      <p><strong>Objective:</strong> Highlights the mission, vision, and essential features of ReConnect.</p>
+      <p><strong>Impact:</strong> Establishes immediate understanding and user interest.</p>
+    </div>
+
+    <div class="page-analysis">
+      <h3>Science Behind ReConnect</h3>
+      <p><strong>Objective:</strong> Explains foundational psychological theories like Cognitive Load Theory.</p>
+      <p><strong>Impact:</strong> Builds trust through scientific credibility.</p>
+    </div>
+
+    <div class="page-analysis">
+      <h3>Community Building</h3>
+      <p><strong>Objective:</strong> Promotes user interaction and peer support networks.</p>
+      <p><strong>Impact:</strong> Strengthens engagement and emotional connection.</p>
+    </div>
+
+    <div class="page-analysis">
+      <h3>Mindfulness Notifications</h3>
+      <p><strong>Objective:</strong> Sends reminders for mindful breaks and tech detox.</p>
+      <p><strong>Impact:</strong> Encourages healthier screen usage habits.</p>
+    </div>
+
+    <div class="page-analysis">
+      <h3>User Personalization</h3>
+      <p><strong>Objective:</strong> Allows users to set personal goals, preferences, and themes.</p>
+      <p><strong>Impact:</strong> Increases platform usability and relevance.</p>
+    </div>
+
+    <div class="page-analysis">
+      <h3>Virtual Wellness Assistant</h3>
+      <p><strong>Objective:</strong> Offers conversational support, insights, and motivation.</p>
+      <p><strong>Impact:</strong> Boosts real-time assistance and personal development.</p>
+    </div>
+
+    <div class="page-analysis">
+      <h3>Balance Prompts</h3>
+      <p><strong>Objective:</strong> Introduces guided screen-free activities.</p>
+      <p><strong>Impact:</strong> Reinforces conscious tech engagement and relaxation.</p>
+    </div>
+
+    <div class="pitch">
+      <h2>Strategic Summary</h2>
+      <p><strong>ReConnect</strong> provides a forward-thinking ecosystem tailored for digital-age wellness. By blending psychological science, intelligent systems, and community interaction, it sets a new standard for mindful living in a hyperconnected world.</p>
+    </div>
+  </section>
+</body>
+</html>

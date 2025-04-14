@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account - ReConnect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      animation: fadeInUp 1s ease;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    p.subtitle {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    input[type="email"]:focus,
+    input[type="password"]:focus,
+    input[type="text"]:focus {
+      border-color: #5e72e4;
+      outline: none;
+    }
+
+    .checkbox {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .checkbox input {
+      margin-right: 0.5rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.9rem;
+      background-color: #5e72e4;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #324cdd;
+    }
+
+    .share-options {
+      margin-top: 2rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .share-options div {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .share-options button {
+      width: auto;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      background-color: #f1f1f1;
+      color: #333;
+      border: 1px solid #ccc;
+      transition: all 0.3s ease;
+    }
+
+    .share-options button:hover {
+      background-color: #e2e2e2;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Create Account</h2>
+    <p class="subtitle">Join us to enhance your mindfulness journey</p>
+    <form>
+      <input type="email" placeholder="Email address" required>
+      <input type="password" placeholder="Create a password" required>
+      <input type="text" placeholder="Your content preferences">
+      <div class="checkbox">
+        <input type="checkbox" id="terms" required>
+        <label for="terms">I agree with Terms & Conditions</label>
+      </div>
+      <button type="submit">
+         <a href="BOTLanding.html"> Sign Up </a>
+      </button>
+    </form>
+
+    <div class="share-options">
+      <p>Share</p>
+      <div>
+        <button>WhatsApp</button>
+        <button>Facebook</button>
+        <button>Twitter</button>
+        <button>Email</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      Already registered? <a href="#">Log In</a><br>
+      – Tech Tinkerers
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Edit Profile
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100 font-sans antialiased">
+  <div class="flex h-screen">
+   <!-- Sidebar -->
+   <div class="w-64 bg-gray-800 text-white flex flex-col">
+    <div class="flex items-center justify-center h-16 border-b border-gray-700">
+     <span class="text-xl font-semibold">
+      AnyChat
+     </span>
+    </div>
+    <div class="flex-1 flex flex-col p-4">
+     <button class="bg-blue-600 text-white py-2 px-4 rounded mb-4">
+      New Chat
+     </button>
+     <nav class="flex-1">
+      <ul>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-300 hover:bg-gray-700 rounded" href="#">
+         <i class="fas fa-user-circle mr-3">
+         </i>
+         Profile
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-300 hover:bg-gray-700 rounded" href="#">
+         <i class="fas fa-comments mr-3">
+         </i>
+         Messages
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-300 hover:bg-gray-700 rounded" href="#">
+         <i class="fas fa-users mr-3">
+         </i>
+         Friends
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-300 hover:bg-gray-700 rounded" href="#">
+         <i class="fas fa-cog mr-3">
+         </i>
+         Settings
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-300 hover:bg-gray-700 rounded" href="#">
+         <i class="fas fa-sign-out-alt mr-3">
+         </i>
+         Logout
+        </a>
+       </li>
+      </ul>
+     </nav>
+     <div class="flex items-center p-4 border-t border-gray-700">
+      <img alt="User avatar" class="w-10 h-10 rounded-full mr-3" src="https://placehold.co/40x40"/>
+      <div>
+       <p class="text-sm font-medium">
+        Bobby
+       </p>
+       <p class="text-xs text-gray-400">
+        Online
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 flex flex-col">
+    <header class="flex items-center justify-between h-16 px-6 bg-white border-b border-gray-200">
+     <h1 class="text-xl font-semibold">
+      Tech Tinkerers
+     </h1>
+     <div class="flex items-center">
+      <span class="text-gray-600 mr-4">
+       Edit Profile
+      </span>
+      <i class="fas fa-bell text-gray-600 mr-4">
+      </i>
+      <i class="fas fa-cog text-gray-600">
+      </i>
+     </div>
+    </header>
+    <main class="flex-1 flex items-center justify-center p-6 bg-gray-100">
+     <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg">
+      <h2 class="text-2xl font-semibold mb-6">
+       Edit profile
+      </h2>
+      <div class="flex items-center mb-6">
+       <img alt="Profile picture" class="w-20 h-20 rounded-full mr-4" src="https://placehold.co/80x80"/>
+       <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">
+         Profile photo
+        </label>
+        <button class="bg-gray-200 text-gray-700 py-1 px-3 rounded">
+         Choose image
+        </button>
+       </div>
+      </div>
+      <form>
+       <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700 mb-1">
+         Full name
+        </label>
+        <input class="w-full border border-gray-300 rounded py-2 px-3" placeholder="Full name" type="text"/>
+       </div>
+       <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700 mb-1">
+         Email
+        </label>
+        <input class="w-full border border-gray-300 rounded py-2 px-3" placeholder="email@mydomain.com" type="email"/>
+       </div>
+       <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700 mb-1">
+         Location
+        </label>
+        <input class="w-full border border-gray-300 rounded py-2 px-3" placeholder="Location" type="text"/>
+       </div>
+       <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700 mb-1">
+         About me
+        </label>
+        <textarea class="w-full border border-gray-300 rounded py-2 px-3" placeholder="Something about you"></textarea>
+       </div>
+       <div class="flex justify-end">
+        <button class="bg-blue-600 text-white py-2 px-4 rounded" type="button">
+         Save profile
+        </button>
+       </div>
+      </form>
+     </div>
+    </main>
+    <footer class="text-center py-4 text-gray-500 text-sm">
+     © 2023 AnyChat. All rights reserved.
+    </footer>
+   </div>
+  </div>
+ </body>
+</html>
